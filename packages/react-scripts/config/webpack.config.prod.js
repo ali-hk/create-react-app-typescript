@@ -169,10 +169,10 @@ module.exports = {
             options: {
               // @remove-on-eject-begin
               babelrc: false,
-			  presets: [require.resolve('babel-preset-react-app')],
+              presets: [require.resolve('babel-preset-react-app')],
               // @remove-on-eject-end
               compact: true,
-			  plugins: ['lodash'],
+              plugins: ['lodash'],
             },
           },
           // Compile .tsx?
@@ -386,7 +386,7 @@ module.exports = {
       tsconfig: paths.appTsConfig,
       tslint: paths.appTsLint,
     }),
-	new LodashModuleReplacementPlugin
+    new LodashModuleReplacementPlugin
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
